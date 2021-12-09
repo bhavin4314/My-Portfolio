@@ -1,0 +1,613 @@
+* {
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover,
+li:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-title {
+    font-family: serif;
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1F1C2C;
+
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -35%;
+    left: 50%;
+    width: 50px;
+    height: 5px;
+    background-color: #005832;
+}
+
+.section-title::before {
+    position: absolute;
+    content: '';
+    bottom: -35%;
+    right: 50%;
+    width: 50px;
+    height: 5px;
+    background-color: #cde99f;
+}
+
+
+.title {
+    color: #343a40;
+    font-size: 28px;
+    margin-top: 5px;
+
+}
+
+
+.nav-link {
+    color: #343a40;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link:after {
+    bottom: -4px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #005832;
+    color: #005832;
+    opacity: 0.6;
+    transition: width 0.3s ease 0s;
+    width: 0;
+
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    opacity: 0.9;
+    color: #005832 !important;
+}
+
+.heropara {
+    font-size: x-large;
+    color: #343a40;
+}
+
+.herobtn button {
+    border-radius: 50px;
+    font-size: 21px;
+}
+
+.herobtn button:hover {
+    background-color: #005832;
+    transition-duration: 0.3s;
+}
+
+.herobtn1 {
+    background-color: #fff;
+    color: #343a40;
+}
+
+.herobtn2 {
+    background-color: #cde99f;
+    color: #343a40;
+}
+
+.homepage {
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.homepage::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: -webkit-linear-gradient(to right, #F8F8F8 50%, #F16F5C 0%, #FFFFFF 0%, #F02F17 0%, #CDE99FA1 49%);
+    background: -moz-linear-gradient(to right, #F8F8F8 50%, #F16F5C 0%, #FFFFFF 0%, #F02F17 0%, #CDE99FA1 49%);
+    background: linear-gradient(to right, #f8f8f8 50%, #F16F5C 0%, #FFFFFF 0%, #F02F17 0%, #CDE99FA1 49%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 40%);
+
+}
+
+
+.leftpart {
+    height: 90vh;
+    transform: translate(0, 25%);
+
+}
+
+
+.rightpart {
+    height: 90vh;
+    transform: translate(0, 15%);
+}
+
+.personalImg {
+    width: 400px;
+    box-shadow: 0 4px 1px 0 rgba(78, 78, 78, 0.678), 0 6px 10px 0 rgba(61, 57, 57, 0.637);
+}
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+.abouthead {
+    color: #005832;
+}
+
+
+.aboutimg {
+
+    width: 300px;
+    height: 300px;
+    box-shadow: 5px 10px 8px #888888;
+    display: block;
+    margin: 8% auto;
+    border-radius: 50%;
+
+}
+
+.abouticon {
+    display: flex;
+    justify-content: center;
+    color: #005832;
+
+}
+
+
+
+.abouticon .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f8f8f8;
+    width: 70px;
+    height: 70px;
+    margin: 0 15px;
+    box-shadow: 0px 0px 7px #888888;
+}
+
+.abouticon .icon:hover {
+    border-radius: 50%;
+    border: 1px solid #005832;
+    transition-duration: 0.3s;
+}
+
+.aboutinfo {
+
+    background: #fff;
+    box-shadow: 0 5px 10px 0 #d4d3d3;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.aboutinfo p {
+    font-size: 17px;
+    color: #343a40;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+.journey {
+    margin-top: 130px;
+    text-transform: capitalize;
+
+}
+
+.edublock h6,
+.edublock p {
+    color: #646368;
+    font-size: 17px !important;
+}
+
+
+
+.journeylist {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+
+.journeylist {
+    margin-top: 7%;
+}
+
+.education {
+    margin-bottom: 100px;
+}
+
+.edublock {
+    position: relative;
+    margin-bottom: 8%;
+
+}
+
+
+
+.edublock::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 140%;
+    background-color: rgb(56, 56, 56);
+    left: -20px;
+    top: -10%;
+}
+
+.edublock::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #005832;
+    border-radius: 50%;
+    left: -27px;
+    top: 7px;
+}
+
+.year {
+    font-weight: 600;
+}
+
+.qualification {
+    font-weight: 500;
+    color: #343a40;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+.box {
+
+    text-align: center;
+    width: 280px;
+
+}
+
+
+
+.percent {
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    top: 106px;
+    left: 110px;
+
+}
+
+.text {
+    font-weight: 600;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.skill .card {
+
+    box-shadow: 0px 0px 8px #888888;
+    border-radius: 20px;
+
+}
+
+.skill .card:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    border-radius: 0;
+
+}
+
+svg {
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+}
+
+svg circle {
+
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10px;
+    stroke-linecap: round;
+
+
+}
+
+svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #f8f8f8;
+
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.skill .card:nth-child(1) circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #005832;
+
+}
+
+.skill .card:nth-child(2) circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    stroke: #005832;
+
+}
+
+.skill .card:nth-child(3) circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
+    stroke: #005832;
+
+}
+
+.skill .card:nth-child(4) circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #005832;
+
+}
+
+.skill .card:nth-child(5) circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke: #005832;
+
+}
+
+.skill .card:nth-child(6) circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 60) / 100);
+    stroke: #005832;
+
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+.project {
+    margin-top: 5%;
+
+}
+
+
+
+.projectlist {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    padding-left: -5%;
+}
+
+.project .card {
+    box-shadow: 0px 0px 8px #888888;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-width: 0px;
+    position: relative;
+    overflow: hidden !important;
+}
+
+.project .card a {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    color: #005832;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.project .card:hover:after {
+    opacity: 0.6;
+
+}
+
+.project .card:hover a {
+    transform: translateY(0);
+    transition-duration: 0.2s;
+}
+
+
+
+.project .card:after {
+    content: "";
+    /* Set the element as full-size */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* Set bg and hide the element + animation */
+    background-color: #f8f8f8;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+.contactPage {
+    background-color: #f8f8f8;
+    /* height: 100vh; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+}
+
+.contacthead {
+    margin-left: -1%;
+}
+
+.icons p,
+a {
+    font-size: larger;
+    margin-top: 2%;
+}
+
+.icons i {
+    margin-right: 5%;
+    margin-left: 3%;
+    color: #005832;
+    /* margin-top: 1%; */
+}
+
+
+.formpart {
+    background: #005832;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cde99fa1, #1F1C2C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(50deg, #cde99fa1, #005832);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    padding: 7% 5%;
+    border-radius: 12%;
+
+}
+
+.formpart a {
+
+    color: #005832;
+    border-radius: 20px;
+    border: #005832 solid 1px;
+}
+
+.formpart a:hover {
+    background-color: #005832 !important;
+    color: #F8F8F8 !important;
+    border: #005832 solid 1px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+.foottitle {
+    font-size: larger;
+    color: #005832;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+
+
+@media only screen and (max-width: 992px) {
+    .roundskill {
+        margin-top: 130px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .nav-link:after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    .project .card {
+        width: 100% !important;
+    }
+
+    .project .card img {
+        height: 200px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 485px) {
+    .project .card {
+        width: 100% !important;
+
+    }
+
+    .project .card img {
+        height: 250px !important;
+    }
+}
+
+
+@media only screen and (max-width: 434px) {
+    .personalImg {
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 331px) {
+    .personalImg {
+        width: 250px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .herobtn1 {
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+
+    .journeylist {
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 425px) {
+
+
+
+    .work {
+
+        margin-left: -50px !important;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .icons i {
+        font-size: 30px;
+    }
+}
