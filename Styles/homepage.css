@@ -510,6 +510,16 @@ a {
 
 }
 
+.formheadpara {
+    font-size: 18px;
+}
+
+.formheadpara span {
+    color: #005832;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
 .formpart a {
 
     color: #005832;
